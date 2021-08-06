@@ -1,0 +1,43 @@
+.container {
+    width: 600px;
+    height: 150px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    /* ("mengatur tampilan container") */
+    display: flex; 
+    /* align-items: baseline; */
+}
+
+.container div{
+    /* width: 120px; */
+    /* height: 120px; */
+    background-color: rgb(19, 133, 255);
+    margin: 2px;
+    /* memberi ukuran pada items "flex: 1;" */
+    flex: 1;
+}
+
+/* -order- */
+/* ("merubah posisi urutan items") */
+.satu { order: 3;}
+.dua { order: 4;}
+.tiga { order: 2;}
+.empat { order: 1;}
+/* -end- */
+
+.container div.dua {
+    /* ("mengatur ukuran items") */
+    flex: 2;
+}
+
+.container div.tiga {
+    /* ("mengatur kesejajaran/penjajaran/align sebuah items terhadap corss axis atau sumbu vertikal") */
+    /* align-self: auto; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    align-self: center;
+    /* align-self: baseline; */
+    /* align-self: stretch; */
+}

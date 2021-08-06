@@ -1,0 +1,28 @@
+/* saat display = blok
+dalam  mode vertical margin antar elemen tidak saling menambahkan (overlapping margin) maka yang diambil adalah margin terbesar */
+
+/* saat diplay = inline-block
+dalam mode horizontal maka margin akan saling menambahkan */
+
+.satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin-bottom: 30px;
+	margin-top: -100px;
+}
+/* margin = auto >> akan membuat posisi element berada ditengah.
+! padding tidak memiliki nilai Auto */
+.dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-top: -50px;
+	margin-left: 50px;
+}
+/* shorthand {margin = 10px 2opx;} */
+.tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+}
